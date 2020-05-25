@@ -26,3 +26,7 @@ Route::prefix('users')->group(function (){
     Route::get('/{id}/change-password','UserController@showFormChangePassword')->name('users.showFormChangePassword');
     Route::post('/{id}/change-password','UserController@changePassword')->name('users.changePassword');
 });
+
+Route::prefix('categories')->group(function (){
+    Route::get('/','CategoryController@getAll')->name('categories.list');
+});

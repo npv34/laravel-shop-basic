@@ -2,23 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Services\UserService;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    protected $user;
+    protected $userService;
 
-    public function __construct(User $user)
+    public function __construct(UserService $userService)
     {
-        $this->user = $user;
         $this->middleware('auth');
+        $this->middleware('isAdmin');
+        $this->userService = $userService;
     }
 
     public function getAll()
     {
-        $users = $this->user->all();
+        $users = $this->userService->getAllUser();
         return view('users.list', compact('users'));
     }
 
@@ -35,9 +37,8 @@ class UserController extends Controller
     }
 
     public function changePassword(Request $request, $id)  {
-        $user = $this->user->findOrFail($id);
-        $user->password = Hash::make($request->password);
-        $user->save();
+        $user = $this->userService->findById($id);
+        $this->userService->changePassword($user, $request);
         session()->flash('success', 'change password success!');
         return redirect()->route('users.list');
     }

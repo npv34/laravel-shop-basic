@@ -35,9 +35,11 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>
+            @if(\Illuminate\Support\Facades\Auth::check())
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">{{ auth()->user()->name }}</a>
             </li>
+                @endif
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3e0b09f-3fea-4469-98bc-fda8d17a24a7" name="Default Changelist" comment="" />
+    <list default="true" id="e3e0b09f-3fea-4469-98bc-fda8d17a24a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +22,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -114,12 +127,14 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1cCHOtosui8X9vEl8IbWnhpcToA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -149,6 +164,8 @@
       <updated>1590025626972</updated>
       <workItem from="1590025631897" duration="2789000" />
       <workItem from="1590136394393" duration="3230000" />
+      <workItem from="1590335325456" duration="152000" />
+      <workItem from="1590368525145" duration="3748000" />
     </task>
     <servers />
   </component>
@@ -156,13 +173,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="472" y="360" key="NewPhpFileDialog" timestamp="1590137949783">
+    <state x="333" y="104" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590373075813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590137949783" />
+    <state x="333" y="104" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1590373075813" />
+    <state x="387" y="211" key="NewPhpClassDialog" timestamp="1590372538851">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="387" y="211" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1590372538851" />
+    <state x="472" y="360" key="NewPhpFileDialog" timestamp="1590370239548">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590370239548" />
     <state x="222" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1590025630303">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="222" y="207" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1590025630303" />
+    <state x="217" y="0" width="1005" height="1466" key="search.everywhere.popup" timestamp="1590370592624">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="217" y="0" width="1005" height="1466" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1590370592624" />
   </component>
 </project>
