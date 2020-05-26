@@ -1,35 +1,50 @@
 @extends('master')
 @section('content')
-    <div class="card">
-        <div class="card-header">
-            Featured
-        </div>
-        <div class="card-body">
-            <p class="text-success">{{ session('success') }}</p>
-            <table class="table">
-                <thead class="thead-light">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($users as $key => $user)
-                <tr>
-                    <th scope="row">{{ $key++ }}</th>
-                    <td>{{ $user->name }}</td>
-                    <td>{{ $user->email }}</td>
-                    <td>
-                        <a href="{{ route('users.delete',['id' => $user->id]) }}">Delete</a>
-                        <a href="{{ route('users.showFormChangePassword',['id' => $user->id]) }}">ChangePass</a>
-                    </td>
-                </tr>
-                @endforeach
+    <div class="container-fluid">
+        <h1 class="mt-4">Users</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active">User</li>
+        </ol>
+        <div class="card mb-4">
+            <div class="card-header"><i class="fas fa-table mr-1"></i>DataTable Example</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        @forelse($users as $key => $user)
+                            <tr>
+                                <td>{{ ++$key }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->username }}</td>
+                                <td>
+                                    @if($user->role == \App\Http\Controllers\RoleConstant::ADMIN)
+                                        Admin
+                                    @else
+                                        User
+                                    @endif
+                                </td>
 
-                </tbody>
-            </table>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="4">No data</td>
+                            </tr>
+                        @endforelse
+                        </tfoot>
+
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
+
 @endsection

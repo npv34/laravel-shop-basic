@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e0b09f-3fea-4469-98bc-fda8d17a24a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/categories/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/core/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/core/menu-left.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/core/menu-top.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +139,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,6 +147,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -165,7 +173,8 @@
       <workItem from="1590025631897" duration="2789000" />
       <workItem from="1590136394393" duration="3230000" />
       <workItem from="1590335325456" duration="152000" />
-      <workItem from="1590368525145" duration="3748000" />
+      <workItem from="1590368525145" duration="3955000" />
+      <workItem from="1590462637713" duration="1903000" />
     </task>
     <servers />
   </component>
@@ -181,17 +190,19 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="387" y="211" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1590372538851" />
-    <state x="472" y="360" key="NewPhpFileDialog" timestamp="1590370239548">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="629" y="432" key="NewPhpFileDialog" timestamp="1590463364675">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590370239548" />
+    <state x="629" y="432" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590463364675" />
     <state x="222" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1590025630303">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="222" y="207" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1590025630303" />
-    <state x="217" y="0" width="1005" height="1466" key="search.everywhere.popup" timestamp="1590370592624">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="289" y="0" width="1340" height="1080" key="search.everywhere.popup" timestamp="1590463478877">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="217" y="0" width="1005" height="1466" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1590370592624" />
+    <state x="289" y="0" width="1340" height="1080" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1590463478877" />
   </component>
 </project>
