@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e0b09f-3fea-4469-98bc-fda8d17a24a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/datatables-demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/core/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/core/menu-left.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/core/menu-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +130,9 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,6 +140,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -174,7 +168,8 @@
       <workItem from="1590136394393" duration="3230000" />
       <workItem from="1590335325456" duration="152000" />
       <workItem from="1590368525145" duration="3955000" />
-      <workItem from="1590462637713" duration="1903000" />
+      <workItem from="1590462637713" duration="2361000" />
+      <workItem from="1590545351107" duration="2947000" />
     </task>
     <servers />
   </component>
@@ -182,6 +177,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="120" y="0" key="#Inspections" timestamp="1590545417098">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="120" y="0" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1590545417098" />
     <state x="333" y="104" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590373075813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -195,6 +194,10 @@
     </state>
     <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590370239548" />
     <state x="629" y="432" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590463364675" />
+    <state x="0" y="0" key="SettingsEditor" timestamp="1590545364747">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1590545364747" />
     <state x="222" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1590025630303">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
