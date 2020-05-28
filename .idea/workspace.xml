@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3e0b09f-3fea-4469-98bc-fda8d17a24a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/list.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoleConstant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +134,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cCHOtosui8X9vEl8IbWnhpcToA" />
@@ -169,7 +186,8 @@
       <workItem from="1590335325456" duration="152000" />
       <workItem from="1590368525145" duration="3955000" />
       <workItem from="1590462637713" duration="2361000" />
-      <workItem from="1590545351107" duration="2947000" />
+      <workItem from="1590545351107" duration="3733000" />
+      <workItem from="1590631631192" duration="6799000" />
     </task>
     <servers />
   </component>
@@ -189,10 +207,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="387" y="211" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1590372538851" />
-    <state x="629" y="432" key="NewPhpFileDialog" timestamp="1590463364675">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="472" y="360" key="NewPhpFileDialog" timestamp="1590638320760">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590370239548" />
+    <state x="472" y="360" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1590638320760" />
     <state x="629" y="432" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1590463364675" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1590545364747">
       <screen x="0" y="0" width="1440" height="900" />

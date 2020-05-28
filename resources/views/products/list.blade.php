@@ -1,10 +1,10 @@
 @extends('master')
 @section('content')
     <div class="container-fluid">
-        <h1 class="mt-4">Users</h1>
+        <h1 class="mt-4">Products</h1>
         <ol class="breadcrumb mb-4">
             <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-            <li class="breadcrumb-item active">User</li>
+            <li class="breadcrumb-item active">Products</li>
         </ol>
         <div class="card mb-4">
             <div class="card-header"><i class="fas fa-table mr-1"></i></div>
@@ -13,7 +13,7 @@
                     <div class="col-12 col-md-12">
                         <div class="row">
                             <div class="col-12 col-md-4 p-0">
-                                <a class="btn btn-success mb-2" href="">Create</a>
+                                <a class="btn btn-success mb-2" href="{{ route('products.create') }}">Create</a>
                             </div>
                             <div class="col-12 col-md-8">
                                 <form class="form-inline my-2 my-lg-0">
@@ -31,30 +31,26 @@
                         <tr>
                             <th>STT</th>
                             <th>Name</th>
-                            <th>Email</th>
-                            <th>Role</th>
+                            <th>Image</th>
+                            <th>Desc</th>
+                            <th>Price</th>
+                            <th>Category</th>
                             <th></th>
                         </tr>
                         </thead>
                         <tfoot>
-                        @forelse($users as $key => $user)
+                        @forelse($products as $key => $product)
                             <tr>
                                 <td>{{ ++$key }}</td>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->username }}</td>
+                                <td>{{ $product->name }}</td>
+                                <td><img src="{{ asset('storage/'. $product->image) }}" alt="" width="150"></td>
+                                <td>{{ $product->desc }}</td>
+                                <td>{{ $product->price }}</td>
+                                <td>{{ $product->category->name }}</td>
                                 <td>
-                                    @if($user->role == \App\Http\Controllers\RoleConstant::ADMIN)
-                                        Admin
-                                    @else
-                                        User
-                                    @endif
-                                </td>
-                                <td>
-                                    @if(\Illuminate\Support\Facades\Auth::user()->id !== $user->id)
-                                        <a href="{{ route('users.update', ['id' => $user->id]) }}"
-                                           class="btn btn-primary">Edit</a>
-                                        <a href="" class="btn btn-danger">Delete</a>
-                                    @endif
+                                    <a href=""
+                                       class="btn btn-primary">Edit</a>
+                                    <a href="" class="btn btn-danger">Delete</a>
                                 </td>
 
                             </tr>
@@ -70,5 +66,4 @@
         </div>
     </div>
     @toastr_render
-
 @endsection

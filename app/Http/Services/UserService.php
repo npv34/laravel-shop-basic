@@ -30,4 +30,10 @@ class UserService
         $this->userRepo->save($user);
     }
 
+    public function update($user, $request) {
+        $user->name = $request->name;
+        $user->role = $request->role;
+        $this->userRepo->save($user);
+    }
+
 }
