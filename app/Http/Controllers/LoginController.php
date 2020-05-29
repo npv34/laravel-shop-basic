@@ -9,11 +9,13 @@ use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
-    function showFormLogin() {
+    function showFormLogin()
+    {
         return view('login');
     }
 
-    function login(Request $request) {
+    function login(Request $request)
+    {
         $email = $request->email;
         $password = $request->password;
 
@@ -25,8 +27,14 @@ class LoginController extends Controller
         if (Auth::attempt($user)) {
             return redirect()->route('users.list');
         } else {
-            Session::flash('error-login','Tai khoan hoac mat khau khong dung');
+            Session::flash('error-login', 'Tai khoan hoac mat khau khong dung');
             return back();
         }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/login');
     }
 }

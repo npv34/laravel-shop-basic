@@ -21,6 +21,7 @@ Route::get('/login','LoginController@showFormLogin');
 Route::post('/login','LoginController@login')->name('login');
 
 Route::middleware(['auth'])->group(function (){
+    Route::post('/logout', 'LoginController@logout')->name('logout');
     Route::prefix('admin')->group(function (){
         Route::prefix('users')->group(function (){
             Route::get('/','UserController@getAll')->name('users.list');
