@@ -5,6 +5,7 @@ namespace App\Http\Services;
 
 
 use App\Http\Repositories\UserRepository;
+use App\User;
 use Illuminate\Support\Facades\Hash;
 
 class UserService
@@ -34,6 +35,21 @@ class UserService
         $user->name = $request->name;
         $user->role = $request->role;
         $this->userRepo->save($user);
+    }
+
+    public function create($request)
+    {
+        $user = new User();
+        $user->name = $request->name;
+        $user->username = $request->email;
+        $user->password = $request->password;
+        $this->userRepo->save($user);
+    }
+
+    public function searchByKeyword($request)
+    {
+        $keyword = $request->keyword;
+        return $this->userRepo->searchUser($keyword);
     }
 
 }

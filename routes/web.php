@@ -29,6 +29,9 @@ Route::middleware(['auth'])->group(function (){
             Route::post('/{id}/change-password','UserController@changePassword')->name('users.changePassword');
             Route::get('{id}/edit', 'UserController@update')->name('users.update');
             Route::post('{id}/edit', 'UserController@edit')->name('users.edit');
+            Route::get('/create', 'UserController@create')->name('users.create');
+            Route::post('/create', 'UserController@store')->name('users.store');
+            Route::get('/search', 'UserController@search')->name('users.search');
         });
 
         Route::prefix('categories')->group(function (){

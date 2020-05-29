@@ -27,4 +27,11 @@ class UserRepository
     public function save($user) {
         $user->save();
     }
+
+    public function searchUser($keyword)
+    {
+        $result = $this->user->where('name', 'LIKE','%'. $keyword . '%')
+                             ->orWhere('username', 'LIKE', '%' . $keyword . '%')->get();
+        return $result;
+    }
 }

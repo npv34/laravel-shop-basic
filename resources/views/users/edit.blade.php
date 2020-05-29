@@ -1,8 +1,7 @@
 @extends('master')
 @section('content')
     <div class="container-fluid">
-        <h1 class="mt-4">Edit user</h1>
-        <ol class="breadcrumb mb-4">
+        <ol class="breadcrumb mb-4 mt-4">
             <li class="breadcrumb-item"><a href="">Dashboard</a></li>
             <li class="breadcrumb-item"><a href="{{ route('users.list') }}">Users</a></li>
             <li class="breadcrumb-item active">{{ $user->name }}</li>

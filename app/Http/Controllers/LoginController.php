@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Session;
 class LoginController extends Controller
 {
     function showFormLogin() {
-        return view('login', compact('message'));
+        return view('login');
     }
 
     function login(Request $request) {
