@@ -13,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', 'Shop\HomeController@index');
 
 Route::get('/login','LoginController@showFormLogin');
 Route::post('/login','LoginController@login')->name('login');
 
+Route::get('{id}/add-to-cart','Shop\CartController@addToCart')->name('addToCart');
 Route::middleware(['auth'])->group(function (){
     Route::post('/logout', 'LoginController@logout')->name('logout');
     Route::prefix('admin')->group(function (){
